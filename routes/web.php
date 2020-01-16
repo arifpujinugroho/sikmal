@@ -15,3 +15,10 @@ Route::get('/',function (){
     return view('welcome');
 });
 
+Route::get('sso',function (){
+    \Cas::authenticate();
+    $email = \Cas::getCurrentUser();
+    dd($email);
+});
+
+
