@@ -1,1 +1,0 @@
-{"ftp:\/\/pkm.kemahasiswaan.uny.ac.id:21":{"SYSTYPE":0,"FEATURES":["EPRT","EPSV","MDTM","PASV","REST STREAM","SIZE","TVFS","UTF8"],"CREATION_TIME":1578626476}}
