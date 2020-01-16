@@ -8,16 +8,17 @@
 cara install project ini :
 <br>
 <ul>
-  <li><p>1. Install Composer <code>https://getcomposer.org/</code></p></li>
-  <li><p>2. Install NPM <code>git clone https://github.com/arifpujinugroho/sikma.git</code></p></li>
-  <li><p>3. Ketikan di Git Bash/CMD/Terminal <code>git clone https://github.com/arifpujinugroho/sikma.git</code></p></li>
-  <li><p>4. Masuk ke folder projectnya atau folder sikma</p></li>
-  <li><p>5. Ketikan<code>composer install</code></p></li>
-  <li><p>6. ketikan <code>npm isntall</code></p></li>
-  <li><p>7. Duplikat .env.example dan Ubah nama file duplikat tersebut menjadi .env</p></li>
-  <li><p>8. Ketikan<code>php artisan key:generate</code></p></li>
-  <li><p>9. Masukan nama database, username database, dan password database.</p></li>
-  <li><p>10. ketikan <code>npm run dev</code></p></li>
+  <li><p>1. Install GIT <code><a href="https://git-scm.com/" target="_blank">https://git-scm.com/</a></code></p></li>
+  <li><p>2. Install Composer <code><a href="https://getcomposer.org/" target="_blank">https://getcomposer.org/</a></code></p></li>
+  <li><p>3. Install NPM <code><a href="https://www.npmjs.com/get-npm" target="_blank">https://www.npmjs.com/get-npm</a></code></p></li>
+  <li><p>4. Ketikan di Git Bash/CMD/Terminal/PowerShell <code>git clone https://github.com/arifpujinugroho/sikma.git</code></p></li>
+  <li><p>5. Masuk ke folder project SIKMA-nya atau ketikan <code>cd sikma</code></p></li>
+  <li><p>6. Ketikan<code>composer install</code></p></li>
+  <li><p>7. ketikan <code>npm isntall</code></p></li>
+  <li><p>8. Duplikat .env.example dan Ubah nama file duplikat tersebut menjadi .env</p></li>
+  <li><p>9. Ketikan<code>php artisan key:generate</code></p></li>
+  <li><p>10. Masukan nama database, username database, dan password database.</p></li>
+  <li><p>11. ketikan <code>npm run dev</code></p></li>
 </ul>
 
 
