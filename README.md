@@ -4,6 +4,7 @@
  <a href="https://uny.ac.id/" target="_blank"><img width="250" src="https://www.uny.ac.id/sites/www.uny.ac.id/files/logo%20web%20indo.png" alt="UNY Logo"></a></p>
 <br>
 
+> **Remember!!** You Can use SSO Auth in this Project only if your network use **YSU Network**.
 <h1>SIKMAL (Sistem Informasi Kemahasiswaan dan Alumni)</h1>
 cara install project ini :
 <br>
@@ -30,4 +31,3 @@ cara install project ini :
     <li>Jan 16, 2020 - (<a href="https://github.com/arifpujinugroho" target="_blank">Arif Puji Nugroho</a>) try make SIKMA with Laravel and Vue JS</li>
 </ul>
 
-> **Remember!!** You Can use SSO Auth in this Project only if your network use **YSU Network**.
