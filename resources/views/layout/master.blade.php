@@ -18,7 +18,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="author" content="Web Developer PKM Center UNY">
+    <meta name="author" content="Web Developer PKM Center UNY - Arif Puji Nugroho">
 
     <!-- Google font-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
@@ -26,7 +26,7 @@
     <link rel="stylesheet" type="text/css" href="{{url('assets/bower_components/bootstrap/css/bootstrap.min.css')}}">
 
     <link rel="icon" href="{{url('assets/images/favicon2.ico')}}" sizes="32x32" />
-    <link rel="apple-touch-icon-precomposed" href="{{url('assets/images/favicon2.ico')}}" />
+    <link rel="apple-touch-icon-precomposed" href="{{url('assets/images/favicon2.ico')}}" />  
 
     <!-- themify-icons line icon -->
     <link rel="stylesheet" type="text/css" href="{{url('assets/icon/themify-icons/themify-icons.css')}}">
@@ -69,7 +69,7 @@
     <link rel="stylesheet" type="text/css" href="{{url('assets/css/style.css')}}">
 
     <!-- animation nifty modal window effects css -->
-    <link rel="stylesheet" type="text/css" href="{{url('assets/css/component.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url('assets/css/component.css')}}">  
 
 
 
@@ -368,24 +368,6 @@
             });
         </script>
         @include('layout.notification')
-
-        <script>
-                export default {
-            data () {
-                return {
-                    currentLink: location.href,
-                }
-            },
-            computed: {
-                routes() {
-                    return window.routes
-                },
-            }
-        }
-        </script>
-
-        <!-- Scripts -->
-        <script src="{{ asset('js/app.js') }}"></script>
 
         {{--<div  style="text-align:center;font-size:24px;color:red; margin: 0px; padding: 0px; border: 0px; background: url(&quot;{{url('')}}&quot;)
         center center / 79px 23px no-repeat rgb(255, 255, 255); max-width: none; max-height: none; position: fixed;

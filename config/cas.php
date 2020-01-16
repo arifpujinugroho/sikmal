@@ -6,7 +6,7 @@ return [
     |--------------------------------------------------------------------------
     | Example: 'cas.myuniv.edu'.
     */
-    'cas_hostname'        => env('CAS_HOSTNAME', 'sso-internet.uny.ac.id'),
+    'cas_hostname'        => 'sso-internet.uny.ac.id',
 
     /*
     |--------------------------------------------------------------------------
@@ -16,7 +16,7 @@ return [
     | recommended for protecting against DOS attacks.  If using load
     | balanced hosts, then separate each with a comma.
     */
-    'cas_real_hosts'      => env('CAS_REAL_HOSTS', 'sso-internet.uny.ac.id'),
+    'cas_real_hosts'      => 'sso-internet.uny.ac.id',
 
 
     /*
@@ -34,7 +34,7 @@ return [
     | of the Laravel sessions when this is set to false.
     |--------------------------------------------------------------------------
     */
-    'cas_control_session' => env('CAS_CONTROL_SESSIONS', false),
+    'cas_control_session' => env('CAS_CONTROL_SESSIONS', true),
 
     /*
     |--------------------------------------------------------------------------
@@ -57,7 +57,7 @@ return [
     |--------------------------------------------------------------------------
     | Sometimes is /cas
     */
-    'cas_uri'             => env('CAS_URI', '/cas'),
+    'cas_uri'             => env('CAS_URI', ''),
 
     /*
     |--------------------------------------------------------------------------
@@ -102,7 +102,7 @@ return [
     | CAS Logout URI
     |--------------------------------------------------------------------------
     */
-    'cas_logout_url'      => env('CAS_LOGOUT_URL', 'sso-internet.uny.ac.id/logout'),
+    'cas_logout_url'      => '',
 
     /*
     |--------------------------------------------------------------------------
@@ -111,7 +111,8 @@ return [
     | If your server supports redirection services, enter the redirect url
     | in this section.  If left blank, it will default to disabled.
     */
-    'cas_logout_redirect' => env('CAS_LOGOUT_REDIRECT', ''),
+    //'cas_logout_redirect' => env('CAS_LOGOUT_REDIRECT', 'https://localhost/bismillah'),
+    'cas_logout_redirect' => env('CAS_LOGOUT_REDIRECT', 'http://pkm.kemahasiswaan.uny.ac.id'),
 
     /*
     |--------------------------------------------------------------------------

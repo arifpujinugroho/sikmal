@@ -1,8 +1,8 @@
 <?php
 
-use Illuminate\Database\Migrations\Migration;
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
 
 class CreateUsersTable extends Migration
 {
@@ -15,13 +15,19 @@ class CreateUsersTable extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name');
-            $table->string('email')->unique();
+            $table->string('username');
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->enum('level', ['SuperAdmin','Operator','Mahasiswa','Perekap','Dosen']);
             $table->rememberToken();
             $table->timestamps();
         });
+
+		DB::table('users')->insert(array(
+			array('username' => 'mimincakep', 'email_verified_at' => new \DateTime(), 'password' => Hash::make('tanyapakmuiz'), 'level' => 'SuperAdmin'),
+            array('username' => '16520241009','email_verified_at' => new \DateTime(), 'password' => Hash::make('arif.puji2016@student.uny.ac.id'), 'level' => 'Mahasiswa'),
+        ));
+        
     }
 
     /**

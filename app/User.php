@@ -2,9 +2,9 @@
 
 namespace App;
 
+use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'username', 'password', 'level',
     ];
 
     /**
@@ -36,4 +36,25 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+
+    public function operator()
+    {
+        return $this->hasOne('App\Model\Operator', 'id_user');
+    }
+
+    public function dosen()
+    {
+        return $this->hasOne('App\Model\Dosen', 'email_dosen');
+    }
+
+    public function perekap()
+    {
+        return $this->hasOne('App\Model\Perekap', 'id_user');
+    }
+
+    public function identitas_mahasiswa()
+    {
+        return $this->hasOne('App\Model\IdentitasMahasiswa', 'id_user');
+    }
 }

@@ -39,7 +39,7 @@ return [
     |
     */
 
-    'debug' => env('APP_DEBUG', false),
+    'debug' => true,
 
     /*
     |--------------------------------------------------------------------------
@@ -67,7 +67,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'Asia/Jakarta',
 
     /*
     |--------------------------------------------------------------------------
@@ -80,7 +80,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'id_ID.UTF-8',
 
     /*
     |--------------------------------------------------------------------------
@@ -93,7 +93,7 @@ return [
     |
     */
 
-    'fallback_locale' => 'en',
+    'fallback_locale' => 'id_ID.UTF-8',
 
     /*
     |--------------------------------------------------------------------------
@@ -106,7 +106,7 @@ return [
     |
     */
 
-    'faker_locale' => 'en_US',
+    'faker_locale' => 'id_ID.UTF-8',
 
     /*
     |--------------------------------------------------------------------------
@@ -174,14 +174,11 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-
-
-        /*
-         * Package Adding or Custom Application
-         */
+        App\Providers\GoogleDriveServiceProvider::class,
+        //Xavrsl\Cas\CasServiceProvider::class,
+        Subfission\Cas\CasServiceProvider::class,
         App\Providers\TglIndoServiceProvider::class,
         Yajra\DataTables\DataTablesServiceProvider::class,
-        Subfission\Cas\CasServiceProvider::class,
 
     ],
 
@@ -199,7 +196,6 @@ return [
     'aliases' => [
 
         'App' => Illuminate\Support\Facades\App::class,
-        'Arr' => Illuminate\Support\Arr::class,
         'Artisan' => Illuminate\Support\Facades\Artisan::class,
         'Auth' => Illuminate\Support\Facades\Auth::class,
         'Blade' => Illuminate\Support\Facades\Blade::class,
@@ -229,16 +225,13 @@ return [
         'Schema' => Illuminate\Support\Facades\Schema::class,
         'Session' => Illuminate\Support\Facades\Session::class,
         'Storage' => Illuminate\Support\Facades\Storage::class,
-        'Str' => Illuminate\Support\Str::class,
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-
-        //Custom
-        'TglIndo' => App\Helpers\Tglindo::class,
-        'DOCXTemplate' => App\Helpers\DOCXTemplate::class,
-        'DataTables' => Yajra\DataTables\Facades\DataTables::class,
+        //'Cas'       => Xavrsl\Cas\Facades\Cas::class,
         'Cas'       => Subfission\Cas\Facades\Cas::class,
+        'TglIndo' => App\Helpers\Tglindo::class,
+        'DataTables' => Yajra\DataTables\Facades\DataTables::class,
 
     ],
 
