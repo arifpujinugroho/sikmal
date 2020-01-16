@@ -4,7 +4,7 @@
  <a href="https://uny.ac.id/" target="_blank"><img width="250" src="https://www.uny.ac.id/sites/www.uny.ac.id/files/logo%20web%20indo.png" alt="UNY Logo"></a></p>
 <br>
 
-<h1>SIKMA (Sistem Informasi Kemahasiswaan)</h1>
+<h1>SIKMAL (Sistem Informasi Kemahasiswaan dan Alumni)</h1>
 cara install project ini :
 <br>
 <ul>
@@ -14,11 +14,14 @@ cara install project ini :
   <li><p>4. Ketikan di Git Bash/CMD/Terminal/PowerShell <code>git clone https://github.com/arifpujinugroho/sikma.git</code></p></li>
   <li><p>5. Masuk ke folder project SIKMA-nya atau ketikan <code>cd sikma</code></p></li>
   <li><p>6. Ketikan<code>composer install</code></p></li>
-  <li><p>7. ketikan <code>npm isntall</code></p></li>
-  <li><p>8. Duplikat .env.example dan Ubah nama file duplikat tersebut menjadi .env</p></li>
-  <li><p>9. Ketikan<code>php artisan key:generate</code></p></li>
-  <li><p>10. Masukan nama database, username database, dan password database.</p></li>
-  <li><p>11. ketikan <code>npm run dev</code></p></li>
+  <li><p>7. ketikan <code>npm install</code></p></li>
+  <li><p>8. ketikan <code>npm install vue-router</code></p></li>
+  <li><p>9. Duplikat .env.example dan Ubah nama file duplikat tersebut menjadi .env</p></li>
+  <li><p>10. Ketikan<code>php artisan key:generate</code></p></li>
+  <li><p>11. Masukan nama database, username database, dan password database.</p></li>
+  <li><p>12. ketikan <code>npm run dev</code></p></li>
+  <li><p>13. ketikan <code>php artisan serve</code> untuk menjalankan Webnya</p></li>
+  <li><p>14. <strong>Jangan Lupa untuk syukuri apapun</strong> yang terjadi pada WEB ini :)</p></li>
 </ul>
 
 
@@ -26,3 +29,5 @@ cara install project ini :
 <ul>
     <li>Jan 16, 2020 - (<a href="https://github.com/arifpujinugroho" target="_blank">Arif Puji Nugroho</a>) try make SIKMA with Laravel and Vue JS</li>
 </ul>
+
+> **Remember!!** You Can use SSO Auth in this Project only if your network use **YSU Network**.
