@@ -3,17 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use File;
-use Hash;
-use Auth;
-use DB;
-use Mail;
-use Crypt;
-use Storage;
-use Response;
-use Validator;
-use App\User;
-use Redirect;
 use App\Model\FailUp;
 use App\Model\Prodi;
 use App\Model\DBMHS;
